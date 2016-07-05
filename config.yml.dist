@@ -1,0 +1,7 @@
+locations:
+  Home:
+    lat: 45.123
+    lng: -73.456
+  Work:
+    lat: 35.123
+    lng: -75.456

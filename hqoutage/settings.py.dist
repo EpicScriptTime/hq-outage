@@ -1,0 +1,61 @@
+# Add your Twilio credentials for SMS notification
+TWILIO = {
+    'ACCOUNT_SID': '',
+    'AUTH_TOKEN': '',
+    'FROM': '',
+    'TO': '',
+}
+
+TYPE_MAPPING = {
+    'P': 'Power outage',
+    'I': 'Planned interruption',
+    'default': 'Unknown outage',
+}
+
+# Extracted from causes_status.json
+CAUSES_MAPPING = {
+    '11': 'equipment failure',
+    '12': 'equipment failure',
+    '13': 'equipment failure',
+    '14': 'equipment failure',
+    '15': 'equipment failure',
+    '21': 'weather',
+    '22': 'weather',
+    '24': 'weather',
+    '25': 'weather',
+    '26': 'weather',
+    '31': 'accident or incident',
+    '32': 'accident or incident',
+    '33': 'accident or incident',
+    '34': 'accident or incident',
+    '41': 'accident or incident',
+    '42': 'accident or incident',
+    '43': 'accident or incident',
+    '44': 'accident or incident',
+    '51': 'damages due to vegetation',
+    '52': 'damages due to an animal',
+    '53': 'damages due to an animal',
+    '54': 'accident or incident',
+    '55': 'accident or incident',
+    '56': 'accident or incident',
+    '57': 'accident or incident',
+    '58': 'equipment failure',
+    '70': 'equipment failure',
+    '72': 'equipment failure',
+    '73': 'equipment failure',
+    '74': 'equipment failure',
+    '79': 'equipment failure',
+    'default': 'equipment failure',
+}
+
+# Extracted from causes_status.json
+STATUS_MAPPING = {
+    'A': 'Work assigned',
+    'L': 'Crew at work',
+    'R': 'Crew on its way',
+    'default': 'Status unknown',
+}
+
+# Internal variables
+DRY_RUN = False
+FORCE = False
