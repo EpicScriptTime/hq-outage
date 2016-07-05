@@ -1,0 +1,4 @@
+hq-outage
+=========
+
+Deal avec.
